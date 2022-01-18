@@ -10,3 +10,4 @@ while(estudiantes.length > 0){
     saludarEstudiantes(estudiante);
 }
 console.log("Todos los estudiantes fueron saludados (Salimos del while)");
+
