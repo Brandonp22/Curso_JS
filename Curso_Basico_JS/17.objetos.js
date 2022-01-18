@@ -6,7 +6,7 @@ var miAuto = {
     modelo: "Corolla",
     annio: 2020,
     detalle: function(){
-        console.log(`Auto: ${this.modelo} ${this.annio}`); //this esuna variable que hace referencia al objeto
+        console.log(`Auto: ${this.modelo} ${this.annio}`); //this es una variable que hace referencia al objeto
     }
 };
 
