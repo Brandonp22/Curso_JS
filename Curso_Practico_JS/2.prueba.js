@@ -258,8 +258,7 @@
             {nombre: "Audifonos", costo: 1700},
         ];
         articulos.forEach(function(articulo){
-            console.log("Articulo: " + articulo.nombre + "Costo: " + articulo.costo);
+            console.log("Articulo: " + articulo.nombre + " Costo: " + articulo.costo);
         });
-        elementos(articulos);
 
-
+// *Terminado :)
