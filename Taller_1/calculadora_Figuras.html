@@ -11,18 +11,79 @@
         <h1>Calculadora de Figuras Geometricas</h1>
     </header>
 
-    <section>
-        <h2>Calcula el área y el perímetro de un cuadrado</h2>
-        <form>
+    <main>
+        <section>
+            <h2>Calcula el área y el perímetro de un cuadrado</h2>
+            <form>
+                <label for="InputSquare">Cuánto mide cada lado de tu cuadrado</label>
+                <input id="InputSquare" type="number">
+                <button type="button" onclick="calculateSquare()">Calcular</button>
+                <p>Perímetro:</p>
+                <p id="spResult"> 0 cm</p>
+                <p>Area:</p>
+                <p id="saResult"> 0 cm</p>
+            </form>
+        </section>
 
-            <label for="InputCuadrado">Cuánto mide cada lado de tu cuadrado</label>
-            <input id="InputCuadrado" type="number">
+        <section>
+            <h2>Calcula el área y el perímetro de un triángulo</h2>
+            <form>
+                <label for="InputTriangleSideA">Cúanto mide el lado A de tu triangulo</label>
+                <input id="InputTriangleSideA" type="number">
 
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
+                <label for="InputTriangleSideB">Cúanto mide el lado B de tu triangulo</label>
+                <input id="InputTriangleSideB" type="number">
 
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
-        </form>
-    </section>
+                <label for="InputTriangleBase">Cúanto mide la base de tu triangulo</label>
+                <input id="InputTriangleBase" type="number">
+
+                <label for="InputTriangleHeight">Cúanto mide la altura de tu triangulo</label>
+                <input id="InputTriangleHeight" type="number">
+
+                <button type="button" onclick="calculateTriangle()">Calcular</button>
+                <p>Perímetro:</p>
+                <p id="tpResult"> 0 cm</p>
+                <p>Area:</p>
+                <p id="taResult"> 0 cm</p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calcula la altura de un triángulo isósceles</h2>
+            <form>
+                <label for="InputIsoTriangleSideA">Cúanto mide el lado A de tu triángulo</label>
+                <input id="InputIsoTriangleSideA" type="number">
+
+                <label for="InputIsoTriangleSideB">Cúanto mide el lado B de tu triángulo</label>
+                <input id="InputIsoTriangleSideB" type="number">
+
+                <label for="InputIsoTriangleBase">Cúanto mide la base de tu triángulo</label>
+                <input id="InputIsoTriangleBase" type="number">
+
+                <button type="button" onclick="calculateIsoTriangle()">Calcular</button>
+                <p>Altura:</p>
+                <p id="ithResult"> 0 cm</p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calcula el diámetro, área y el perímetro de un circulo</h2>
+            <form>
+                <label for="InputCircle">Cuánto mide el radio de tu circulo</label>
+                <input id="InputCircle" type="number">
+                <button type="button" onclick="calculateCircle()">Calcular</button>
+                <p>Diámetro:</p>
+                <p id="cdResult"> 0 cm</p>
+                <p>Perímetro:</p>
+                <p id="cpResult"> 0 cm</p>
+                <p>Area:</p>
+                <p id="caResult"> 0 cm</p>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer></footer>
 
     <script src="./figuras_encapsulandoFunciones.js"></script>
 </body>
