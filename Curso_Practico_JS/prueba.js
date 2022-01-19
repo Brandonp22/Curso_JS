@@ -260,9 +260,13 @@
         articulos.forEach(function(articulo){
             console.log("Articulo: " + articulo.nombre + " Costo: " + articulo.costo);
         });
+<<<<<<< HEAD:Curso_Practico_JS/prueba.js
 
 // *Terminado :)
 
 
 
+=======
+>>>>>>> d60caea2ceeb529605f2ed69362cf79ae7dc8e8b:Curso_Practico_JS/2.prueba.js
 
+// *Terminado :)
