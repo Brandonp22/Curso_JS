@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Descuentos</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Calcula el área y el perímetro de un cuadrado</h2>
+            <form>
+                <label for="InputPrice">¿Cuál es el precio?</label>
+                <input id="InputPrice" type="number">
+
+                <label for="InputDiscount">¿Tiene descuento?</label>
+                <input id="InputDiscount" type="number">
+
+                <label for="InputCoupon">Agregar cupón</label>
+                <input id="InputCoupon" type="text">
+
+
+                <button type="button" onclick="calculateDiscount()">Calcular</button>
+                <p>Descuento:</p>
+                <p id="dResult"> 0 $</p>
+                <p>Descuento Cupón:</p>
+                <p id="dcResult"> 0 $</p>
+                <p>Precio Final:</p>
+                <p id="pfResult"> 0 $</p>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
