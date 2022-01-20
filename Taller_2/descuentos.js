@@ -41,11 +41,7 @@ function discontCoupon(price, couponValue){
 }
 
 
-
-
-
 //Aquí interactuamos con el html
-
 function calculateDiscount(){
     const inputDiscount = document.getElementById("InputDiscount");
     const valueDiscount = inputDiscount.value;
