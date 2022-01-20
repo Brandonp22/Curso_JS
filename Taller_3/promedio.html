@@ -7,7 +7,33 @@
     <title>Promedio</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Calculadora de Promedios</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Calcula el área y el perímetro de un cuadrado</h2>
+            <form>
+                <label for="InputList">Ingresa los datos separados por espacio</label>
+                <input id="InputList" type="text" placeholder="1,2,3,4,5">
+
+                <button type="button" onclick="calculateAverage()">Calcular</button>
+                <p>Tamaño:</p>
+                <p id="populationResult"> 0</p>
+                <p>Datos ordenados:</p>
+                <p id="sortListResult"> 0</p>
+                <p>Media:</p>
+                <p id="meanResult"> 0</p>
+                <p>Mediana</p>
+                <p id="medianResult"> 0</p>
+                <p>Moda</p>
+                <p id="modeResult"> 0</p>
+                <p>Media Geometrica</p>
+                <p id="GeomeanfResult"> 0</p>
+            </form>
+        </section>
+    </main>
 
     <script src="./promedio.js"></script>
 </body>
