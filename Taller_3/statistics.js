@@ -1,11 +1,12 @@
 
 //Sort List
 function sortList(list){
-    list = list.sort(function(accumulatedValue,newElement){
+    const listSortered = list.sort(function(accumulatedValue,newElement){
         return accumulatedValue - newElement;
     });
-    return list;
+    return listSortered;
 }
+
 
 //Mean
 function calculateMean(list){
@@ -26,11 +27,7 @@ function calculateMedian(list){
     const medianList = parseInt(list.length /2);
     
     function even(number){
-        if(number % 2 === 0){
-            return true;
-        }else{
-            return false;
-        }
+        return (number % 2 === 0);
     }
     
     let median;

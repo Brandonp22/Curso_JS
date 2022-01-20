@@ -22,3 +22,10 @@ Curso de Javascript
 - Segundo paso: implementar las formulas en JS
 - Tercer paso: crear funciones
 - Cuarto paso: integras JS con HTML
+
+## Taller 4: Analisis salarial
+
+- Primer paso: definir formulas
+- Segundo paso: implementar las formulas en JS
+- Tercer paso: crear funciones
+- Cuarto paso: integras JS con HTML
