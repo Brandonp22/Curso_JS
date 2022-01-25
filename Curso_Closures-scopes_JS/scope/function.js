@@ -18,3 +18,5 @@ const anotherFunction = () =>{
     console.log(y);
 }
 anotherFunction();
+
+
