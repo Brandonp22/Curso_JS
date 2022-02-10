@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call-Apply-Bind</title>
+</head>
+<body>
+    
+    <h1>Call-Apply-Bind</h1>
+    <a href="../index.html">Go back</a>
+    <p><em>Abre la consola</em></p>
+
+    <ul>
+      <li><button class="call-to-action">Aprender</button></li>
+      <li><button class="call-to-action">Aprender Más</button></li>
+      <li><button class="call-to-action">¡Nunca parar de Aprender!</button></li>
+    </ul>
+
+    <script>
+    // Establece this usando call
+      function saludar() {
+        console.log(`Hola, soy ${this.name} ${this.apellido}`);
+      }
+
+      const brandon = {
+        name: 'Brandon',
+        apellido: 'Pineda',
+      };
+
+      saludar.call(brandon);
+
+      // Establece this usando call y pasar argumentos a la función
+      function caminar(metros, direccion) {
+        console.log(`${this.name} camina ${metros} metros hacia ${direccion}.`);
+      }
+
+      caminar.call(brandon, 400, 'norte');
+
+      // Establece this usando apply y pasar argumentos a la función
+      const valores = [800, 'noreste'];
+      caminar.apply(brandon, valores);
+
+      /*
+        Call - coma, argumentos separados por comas.
+        Apply - arreglo, argumentos por arreglos.
+      */
+
+      const josue = {name: 'Josue', apellido: 'Chacon'}
+      const josueSaluda = saludar.bind(josue);
+      josueSaluda();
+
+      const josueCamina = caminar.bind(josue, 2000);
+      josueCamina('oeste');
+
+      const buttons = document.getElementsByClassName("call-to-action");
+      Array.prototype.forEach.call(buttons, button => {
+          button.onclick = () => alert('Nunca pares de aprender');
+      });
+    </script>
+</body>
+</html>
