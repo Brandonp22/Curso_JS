@@ -1,0 +1,12 @@
+{
+  "name": "Curso_NPM_JS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "bjpc <bjpc@gmail.com>",
+  "license": "MIT"
+}

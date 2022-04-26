@@ -1,0 +1,26 @@
+{
+  "name": "curso_npm_js",
+  "version": "1.0.0",
+  "description": "construir un paquete para node",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "package"
+  ],
+  "author": "bjpc",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "date-fns": "^2.28.0",
+    "webpack": "^5.72.0"
+  },
+  "optionalDependencies": {
+    "eslint": "^8.14.0"
+  }
+}
